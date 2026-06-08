@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kasham - Elevating schools and colleges with Mentospace (India's first mental wellness mentorship) and Attendix (smart attendance management).">
+    <title>Kasham | Modern Solutions for Modern Education</title>
+    <!-- Google Fonts: Inter for clean UI, Outfit for expressive headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for minimal UI icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo" id="header-logo">
+                <span class="logo-dot"></span>
+                <span class="logo-text">Kasham</span>
+            </a>
+            <nav class="main-nav" id="main-navigation">
+                <ul class="nav-list">
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#preview" class="nav-link">Interactive Demo</a></li>
+                    <li><a href="#features" class="nav-link">Why Kasham</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-sun icon-sun"></i>
+                    <i class="fa-solid fa-moon icon-moon"></i>
+                </button>
+                <a href="#contact" class="btn btn-outline nav-cta">Get Started</a>
+                <button class="mobile-menu-btn" id="mobile-menu-trigger" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-nav-drawer">
+        <ul class="mobile-nav-list">
+            <li><a href="#services" class="mobile-nav-link">Services</a></li>
+            <li><a href="#preview" class="mobile-nav-link">Interactive Demo</a></li>
+            <li><a href="#features" class="mobile-nav-link">Why Kasham</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            <li><a href="#contact" class="mobile-nav-link mobile-cta">Get Started</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-graphics">
+                <div class="grid-overlay"></div>
+                <div class="glow-orb"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-badge reveal">
+                    <span>Shaping the Future of Campus Life</span>
+                </div>
+                <h1 class="hero-title reveal">
+                    Elevating Education Through <br>
+                    <span class="text-highlight">Wellness & Efficiency</span>
+                </h1>
+                <p class="hero-description reveal">
+                    Kasham delivers state-of-the-art platforms to academic institutions across India. From nurturing student minds to streamlining daily attendance, we build systems that make campuses thrive.
+                </p>
+                <div class="hero-ctas reveal">
+                    <a href="#services" class="btn btn-primary">Explore Services</a>
+                    <a href="#preview" class="btn btn-secondary">Interactive Dashboard</a>
+                </div>
+                <div class="hero-metrics reveal">
+                    <div class="metric-item">
+                        <span class="metric-number">1st</span>
+                        <span class="metric-label">Mental Wellness Mentorship in India</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-number">100%</span>
+                        <span class="metric-label">Cloud-based Attendance System</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Our Platforms</span>
+                    <h2 class="section-title">Integrated Solutions for Institutions</h2>
+                    <p class="section-description">We address the two most vital facets of educational management: student well-being and administrative operations.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service Card: Mentospace -->
+                    <div class="service-card reveal" id="service-mentospace">
+                        <div class="card-glow"></div>
+                        <div class="service-badge">First in India</div>
+                        <div class="service-icon">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h3 class="service-name">Mentospace</h3>
+                        <p class="service-tagline">Mental Wellness & Mentorship Platform</p>
+                        <p class="service-description-text">
+                            A specialized wellness platform custom-designed to support students' mental health. Connect with certified mentors, monitor well-being trends, and build a positive campus environment.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Personalized 1-on-1 mentorship</li>
+                            <li><i class="fa-solid fa-check"></i> Anonymous guidance portals</li>
+                            <li><i class="fa-solid fa-check"></i> Behavioral analytics & sentiment tracking</li>
+                            <li><i class="fa-solid fa-check"></i> Expert-designed mental health resources</li>
+                        </ul>
+                        <div class="service-action-wrapper">
+                            <a href="https://mentospacev2.web.app/" target="_blank" rel="noopener noreferrer" class="btn btn-service-cta btn-primary" id="mentospace-link">
+                                Launch Mentospace <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service Card: Attendix -->
+                    <div class="service-card reveal" id="service-attendix">
+                        <div class="card-glow"></div>
+                        <div class="service-icon">
+                            <i class="fa-solid fa-clipboard-user"></i>
+                        </div>
+                        <h3 class="service-name">Attendix</h3>
+                        <p class="service-tagline">Advanced Attendance Management Platform</p>
+                        <p class="service-description-text">
+                            Transform attendance logging from a tedious chore into a seamless, automated process. Accurate real-time tracking, student self-checkins, and instant reports for administrations.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Smart check-ins & automatic logs</li>
+                            <li><i class="fa-solid fa-check"></i> Department-level statistics dashboard</li>
+                            <li><i class="fa-solid fa-check"></i> Instant notifications to guardians/students</li>
+                            <li><i class="fa-solid fa-check"></i> Secure, cloud-hosted architecture</li>
+                        </ul>
+                        <div class="service-action-wrapper">
+                            <a href="https://college-management-murex.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-service-cta btn-primary" id="attendix-link">
+                                Launch Attendix <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Preview Section -->
+        <section class="preview-section" id="preview">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Live Preview</span>
+                    <h2 class="section-title">Explore the Dashboards</h2>
+                    <p class="section-description">Take a quick interactive tour of the dashboards of both our platforms to see how clean and modern they look.</p>
+                </div>
+
+                <div class="preview-widget reveal">
+                    <div class="preview-controls">
+                        <button class="preview-tab-btn active" data-target="mentospace-preview" id="tab-mentospace">
+                            <i class="fa-solid fa-heart-pulse"></i> Mentospace UI
+                        </button>
+                        <button class="preview-tab-btn" data-target="attendix-preview" id="tab-attendix">
+                            <i class="fa-solid fa-clipboard-user"></i> Attendix UI
+                        </button>
+                    </div>
+
+                    <div class="preview-window">
+                        <!-- Top Bar Mockup -->
+                        <div class="window-header">
+                            <div class="window-actions">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="window-address">
+                                <i class="fa-solid fa-lock"></i>
+                                <span id="preview-url">kasham.in/mentospace</span>
+                            </div>
+                            <div class="window-tools">
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Mockup Content: Mentospace -->
+                        <div class="window-body active" id="mentospace-preview">
+                            <div class="mock-sidebar">
+                                <div class="mock-logo"><i class="fa-solid fa-brain"></i> MS</div>
+                                <div class="mock-nav">
+                                    <span class="active"><i class="fa-solid fa-house"></i> Home</span>
+                                    <span><i class="fa-solid fa-user-group"></i> Mentors</span>
+                                    <span><i class="fa-solid fa-chart-line"></i> Insights</span>
+                                    <span><i class="fa-solid fa-gear"></i> Settings</span>
+                                </div>
+                            </div>
+                            <div class="mock-content">
+                                <div class="mock-top">
+                                    <h3>Student Mental Wellness Console</h3>
+                                    <div class="mock-user"><span class="user-avatar"></span> Dr. Ananya Sen</div>
+                                </div>
+                                <div class="mock-dashboard-grid">
+                                    <div class="mock-widget double">
+                                        <h4>Wellness Index (Weekly Trend)</h4>
+                                        <div class="mock-chart-container">
+                                            <div class="mock-chart-y-axis">
+                                                <span>100</span>
+                                                <span>50</span>
+                                                <span>0</span>
+                                            </div>
+                                            <div class="mock-chart">
+                                                <div class="chart-bar" style="--height: 75%">
+                                                    <span class="bar-label">Mon</span>
+                                                </div>
+                                                <div class="chart-bar" style="--height: 85%">
+                                                    <span class="bar-label">Tue</span>
+                                                </div>
+                                                <div class="chart-bar" style="--height: 90%">
+                                                    <span class="bar-label">Wed</span>
+                                                </div>
+                                                <div class="chart-bar highlight" style="--height: 95%">
+                                                    <span class="bar-label">Thu</span>
+                                                </div>
+                                                <div class="chart-bar" style="--height: 88%">
+                                                    <span class="bar-label">Fri</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mock-widget">
+                                        <h4>Wellness Signals</h4>
+                                        <div class="signal-list">
+                                            <div class="signal-item">
+                                                <span class="status-indicator good"></span>
+                                                <div class="signal-info">
+                                                    <h5>Positive Sentiments</h5>
+                                                    <p>87% of sessions reported calm</p>
+                                                </div>
+                                            </div>
+                                            <div class="signal-item">
+                                                <span class="status-indicator warning"></span>
+                                                <div class="signal-info">
+                                                    <h5>Exam Stress Signals</h5>
+                                                    <p>Slight increase in final years</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mock-widget">
+                                        <h4>Recent Sessions</h4>
+                                        <div class="mock-sessions-list">
+                                            <div class="session-row">
+                                                <span class="avatar mini"></span>
+                                                <span class="name">Rohan K.</span>
+                                                <span class="time">10:30 AM</span>
+                                                <span class="status completed">Completed</span>
+                                            </div>
+                                            <div class="session-row">
+                                                <span class="avatar mini"></span>
+                                                <span class="name">Priya S.</span>
+                                                <span class="time">02:15 PM</span>
+                                                <span class="status active">Active Now</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mock-widget double">
+                                        <h4>Wellness Insights Summary</h4>
+                                        <p class="summary-para">Students display high participation rates in our weekend peer-support groups. Over 140+ students registered anonymously this week.</p>
+                                        <div class="summary-stat-row">
+                                            <div class="stat-bubble">
+                                                <span class="stat-val">148</span>
+                                                <span class="stat-lbl">Active Mentorships</span>
+                                            </div>
+                                            <div class="stat-bubble">
+                                                <span class="stat-val">4.9/5</span>
+                                                <span class="stat-lbl">Student Rating</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mockup Content: Attendix -->
+                        <div class="window-body" id="attendix-preview">
+                            <div class="mock-sidebar">
+                                <div class="mock-logo"><i class="fa-solid fa-address-book"></i> AX</div>
+                                <div class="mock-nav">
+                                    <span class="active"><i class="fa-solid fa-gauge-high"></i> Dashboard</span>
+                                    <span><i class="fa-solid fa-users"></i> Students</span>
+                                    <span><i class="fa-solid fa-calendar-days"></i> Timetable</span>
+                                    <span><i class="fa-solid fa-file-invoice"></i> Reports</span>
+                                </div>
+                            </div>
+                            <div class="mock-content">
+                                <div class="mock-top">
+                                    <h3>Attendix Attendance Panel</h3>
+                                    <div class="mock-user"><span class="user-avatar"></span> Admin Portal</div>
+                                </div>
+                                <div class="mock-dashboard-grid">
+                                    <div class="mock-widget">
+                                        <h4>Today's Attendance</h4>
+                                        <div class="radial-progress-container">
+                                            <svg class="radial-svg" viewBox="0 0 100 100">
+                                                <circle class="bg-circle" cx="50" cy="50" r="40"></circle>
+                                                <circle class="fg-circle" cx="50" cy="50" r="40" style="stroke-dasharray: 251.2; stroke-dashoffset: 25.1;"></circle>
+                                            </svg>
+                                            <div class="radial-text">
+                                                <span class="radial-number">91%</span>
+                                                <span class="radial-label">Present</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mock-widget double">
+                                        <h4>Weekly Department Averages</h4>
+                                        <div class="attendance-table-mock">
+                                            <div class="table-header">
+                                                <span>Department</span>
+                                                <span>Strength</span>
+                                                <span>Attendance %</span>
+                                                <span>Status</span>
+                                            </div>
+                                            <div class="table-row">
+                                                <span>Computer Science</span>
+                                                <span>120</span>
+                                                <span>96%</span>
+                                                <span class="tag tag-high">High</span>
+                                            </div>
+                                            <div class="table-row">
+                                                <span>Mechanical Eng.</span>
+                                                <span>90</span>
+                                                <span>84%</span>
+                                                <span class="tag tag-mid">Average</span>
+                                            </div>
+                                            <div class="table-row">
+                                                <span>Bio-Technology</span>
+                                                <span>45</span>
+                                                <span>92%</span>
+                                                <span class="tag tag-high">High</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mock-widget">
+                                        <h4>Smart Swipe Feed</h4>
+                                        <div class="swipe-feed">
+                                            <div class="feed-item">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <div class="feed-details">
+                                                    <h6>Amit Sharma checked in</h6>
+                                                    <p>CS - Section A at 08:58 AM</p>
+                                                </div>
+                                            </div>
+                                            <div class="feed-item">
+                                                <i class="fa-regular fa-clock"></i>
+                                                <div class="feed-details">
+                                                    <h6>Kirti Varma checked in</h6>
+                                                    <p>BT - Section B at 09:02 AM</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mock-widget double">
+                                        <h4>Automated Reports Generated</h4>
+                                        <div class="reports-list-mock">
+                                            <div class="report-box">
+                                                <div class="report-icon-box"><i class="fa-solid fa-file-pdf"></i></div>
+                                                <div class="report-desc">
+                                                    <h6>Weekly Summary - May Week 4</h6>
+                                                    <p>Generated automatically on 29/05/2026</p>
+                                                </div>
+                                                <button class="btn-mock-download" aria-label="Download PDF"><i class="fa-solid fa-arrow-down"></i></button>
+                                            </div>
+                                            <div class="report-box">
+                                                <div class="report-icon-box"><i class="fa-solid fa-file-excel"></i></div>
+                                                <div class="report-desc">
+                                                    <h6>Absentees List (Critical Alert)</h6>
+                                                    <p>12 students under 75% attendance</p>
+                                                </div>
+                                                <button class="btn-mock-download" aria-label="Download Excel"><i class="fa-solid fa-arrow-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Why Choose Us</span>
+                    <h2 class="section-title">Built for Modern Institutions</h2>
+                    <p class="section-description">Every platform we release is engineered to be reliable, secure, and user-centric.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h3 class="feature-title">Seamless Integration</h3>
+                        <p class="feature-desc">Easily connect our services with your existing student information systems (SIS) and database architectures.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3 class="feature-title">Privacy & Security First</h3>
+                        <p class="feature-desc">State-of-the-art encryption guarantees student anonymity in Mentospace and secure, tamper-proof logs in Attendix.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                        <h3 class="feature-title">Actionable Insights</h3>
+                        <p class="feature-desc">Go beyond data collection. Our dashboards analyze information to offer clear, institutional insights and weekly reports.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                        <h3 class="feature-title">Mobile Responsive</h3>
+                        <p class="feature-desc">All interfaces are natively responsive, meaning students and administrators get a premium experience on desktop, tablet, and mobile.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fa-solid fa-users-gear"></i></div>
+                        <h3 class="feature-title">24/7 Dedicated Support</h3>
+                        <p class="feature-desc">Our onboarding team works side-by-side with your IT staff to ensure zero downtime and smooth implementation.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fa-solid fa-sparkles"></i></div>
+                        <h3 class="feature-title">Constant Upgrades</h3>
+                        <p class="feature-desc">We regularly roll out security audits, design polishes, and feature updates driven directly by educator feedback.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote/Testimonial Section -->
+        <section class="testimonial-section">
+            <div class="container testimonial-container reveal">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <blockquote class="testimonial-quote">
+                    "Kasham has completely transformed how we approach student management. Mentospace provides our students with a vital mental support network, while Attendix has saved our administration hundreds of hours of manual entry. It's the future of campus systems."
+                </blockquote>
+                <cite class="testimonial-author">
+                    <span class="author-name">Dr. Rajesh Khanna</span>
+                    <span class="author-title">Dean of Academic Affairs, Vanguard Institute</span>
+                </cite>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-container">
+                <div class="contact-info-block reveal">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Ready to Elevate Your Campus?</h2>
+                    <p class="contact-intro">Let's discuss how Mentospace and Attendix can integrate into your school or college. Contact us for custom institutional pricing or a dedicated walkthrough.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="method-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="method-details">
+                                <h6>Email Us</h6>
+                                <p style="line-height: 1.4;">
+                                    <a href="mailto:ssatviks@gmail.com" style="text-decoration: underline;">ssatviks@gmail.com</a><br>
+                                    <a href="mailto:rajattalekar5143@gmail.com" style="text-decoration: underline;">rajattalekar5143@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="method-details">
+                                <h6>Call Support</h6>
+                                <p><a href="tel:+919538996773" style="text-decoration: underline;">+91 9538996773</a></p>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="method-details">
+                                <h6>Headquarters</h6>
+                                <p>Bengaluru, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-block reveal">
+                    <form id="kasham-contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <input type="text" id="form-name" required placeholder=" ">
+                                <label for="form-name">Full Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="form-email" required placeholder=" ">
+                                <label for="form-email">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-group">
+                                <input type="text" id="form-institution" required placeholder=" ">
+                                <label for="form-institution">Institution Name</label>
+                            </div>
+                            <div class="input-group">
+                                <select id="form-service" required>
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="both">Both Services (Mentospace & Attendix)</option>
+                                    <option value="mentospace">Mentospace (Mental Wellness)</option>
+                                    <option value="attendix">Attendix (Attendance Management)</option>
+                                </select>
+                                <label for="form-service" class="select-label">Select Service Interest</label>
+                            </div>
+                        </div>
+                        <div class="input-group textarea-group">
+                            <textarea id="form-message" required placeholder=" "></textarea>
+                            <label for="form-message">How can we help your campus?</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" id="form-submit-btn">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <!-- Form Success Message -->
+                    <div class="form-success-message" id="form-success">
+                        <i class="fa-regular fa-circle-check success-icon"></i>
+                        <h3>Thank You!</h3>
+                        <p>Your inquiry has been submitted. A Kasham institution specialist will reach out to you within 24 hours.</p>
+                        <button class="btn btn-outline btn-reset" id="form-reset-btn">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-dot"></span>
+                        <span class="logo-text">Kasham</span>
+                    </a>
+                    <p class="brand-tagline">Advanced wellness and attendance ecosystem for forward-thinking schools and universities across India.</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-links-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="https://mentospacev2.web.app/" target="_blank" rel="noopener noreferrer">Mentospace</a></li>
+                            <li><a href="https://college-management-murex.vercel.app/" target="_blank" rel="noopener noreferrer">Attendix</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#services">Our Platforms</a></li>
+                            <li><a href="#preview">Interactive Demo</a></li>
+                            <li><a href="#features">Why Kasham</a></li>
+                            <li><a href="#contact">Get In Touch</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Institutional SLA</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p class="copyright-text">&copy; 2026 Kasham Technologies Private Limited. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

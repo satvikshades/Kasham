@@ -1,0 +1,12 @@
+{
+  "name": "kasham-landing-page",
+  "version": "1.0.0",
+  "description": "Minimalist premium landing page for Kasham",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server -p 3000"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
